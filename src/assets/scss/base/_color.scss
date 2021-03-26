@@ -1,0 +1,70 @@
+// => Theme-colors
+$primary: #713bdb;
+$primary-dark:#642ad6;
+$primary-light: #f3eefc;
+$secondary:#f2f6fc;
+
+// => Gray
+
+$gray: #eff1f5;
+$gray-light: #f9f9f9; // Overview widget background
+$gray-dark: #6b7897; // Text Color
+
+$white: #ffffff;
+$gray-100: #f5f6fa;
+$gray-200: #cccccc;
+$gray-300: #e0e4ec; // Borders
+$gray-400: #c4c4c4;
+$gray-500: #acb4c7;
+$gray-600: #9da6ba; // Secondary Text
+$gray-700: #808080;
+$gray-800: #707070;
+$gray-900: #222222;
+$black: #000000;
+
+// => Additional colors
+
+$red: #db1c24;
+$orange: #fa8c5d;
+$green: #32d69e;
+$blue: #4eb6fb;
+$pink: #fc4d83;
+
+// => Body 
+
+$body-bg: $white;
+
+// => Semantic colors 
+
+$success: #80da80; // Success actions, positive button color
+$info: #4c84ff; // Info actions
+$info-dark: #2d69eb;
+$info-light: #ebf2ff;
+$warning: #fec627;
+$warning-light: #fff4d6; // Warning actions
+$danger: #d62a2a; // Danger actions, negative button color
+
+// => for Overlay
+
+$light: $gray-600;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "gray": $gray,
+  "gray-dark": $gray-dark,
+  "primary-dark": $primary-dark,
+  "light": $light,
+  "black": $black,
+  "orange": $orange,
+  "green": $green,
+  "blue": $blue,
+  "pink": $pink,
+  "gray-700": $gray-700,
+  "gray-600": $gray-600,
+  "gray-100": $gray-100,
+);

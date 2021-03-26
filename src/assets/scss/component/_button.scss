@@ -1,0 +1,22 @@
+/*----buttons----*/
+.btn {
+    border-radius: 0px;
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.header-btn {
+    &:hover {
+        background-color: $gray-300;
+    }
+}
+
+.btn-sidebar {
+    .btn-data {
+        font-size: $font-size + 3;
+    }
+    &:hover {
+        background-color: $gray-300;
+    }
+}

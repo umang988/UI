@@ -1,0 +1,62 @@
+/*----toggle menu----*/
+.toggle-menu,
+.toggle-menu-header {
+    position: relative;
+    width: 28px;
+    height: 20px;
+    transition: .3s all;
+    cursor: pointer;
+    .line {
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background: $red;
+        border-radius: 9px;
+        opacity: 1;
+        transition: .3s ease-in-out;
+        z-index: 9;
+        &-1 {
+            @include line(0, 100%);
+        }
+        &-2 {
+            @include line(8px, 100%);
+        }
+        &-3 {
+            @include line(16px, 100%);
+        }
+    }
+    &:hover {
+        .line {
+            &-1 {
+                @include line(5px, 100%, rotate(45deg));
+            }
+            &-2 {
+                opacity: 0;
+            }
+            &-3 {
+                @include line(5px, 100%, rotate(-45deg));
+            }
+        }
+    }
+}
+
+.toggle-menu-header {
+    &:hover {
+        transform: translateY(2px);
+        .line {
+            &-1 {
+                @include line(3px, 10px, rotate(45deg));
+                right: -2px;
+            }
+            &-2 {
+                @include line(6px, 100%);
+                opacity: 1;
+            }
+            &-3 {
+                @include line(9px, 10px, rotate(-45deg));
+                right: -2px;
+            }
+        }
+    }
+}

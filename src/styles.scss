@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+// App Base files--> Colors, Variable and directives
+@import "assets/scss/base/index";
+
+// Bootstrap Required partials
+@import "assets/scss/vendor/bootstrap-base";
+
+// Bootstrap components
+@import "assets/scss/vendor/bootstrap-component";
+
+// App Layout --> Sidebar, Topbar and Content
+@import "assets/scss/layout/index";
+
+
+// Add Custom component style
+@import "assets/scss/component/index";
+
