@@ -1,0 +1,52 @@
+<input type="checkbox" class="d-none" id="sidebar" checked>
+<aside class="side-nav overflow-hidden d-flex d-sm-none flex-column" id="side-nav">
+    <div class="aside-header d-flex align-items-center justify-content-between">
+        <div class="d-inline-block d-sm-none">
+            <img src="assets/images/logo.png" class="header-logo" alt="#">
+        </div>
+        <label for="sidebar" class="toggle-menu m-0 p-0 ml-auto">
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+        </label>
+    </div>
+    <div class="aside-body d-flex flex-column flex-grow-1 overflow-y-auto">
+        <ul class="sidebar-nav d-flex flex-column p-0 h-100">
+            <li class="nav-item">
+                <div class="btn-group dropright">
+                    <button type="button" class="btn btn-sidebar align-items-center" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <span class="btn-data">Mentors</span>
+                        <span class="fa fa-angle-right ml-2"></span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Add Mentors</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">View Profile</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="btn-group dropright">
+                    <button type="button" class="btn btn-sidebar align-items-center" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <span class="btn-data">Interns</span>
+                        <span class="fa fa-angle-right ml-2"></span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Add Interns</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">View Profile</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-sidebar">
+                        <span class="btn-data">View Leave</span>
+                    </button>
+                </div>
+            </li>
+        </ul>
+    </div>
+</aside>

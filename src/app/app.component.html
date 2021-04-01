@@ -1,119 +1,18 @@
-
-
-<head>
-    <title>dashboard</title>
-    <!-- meta tags -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Font Awesome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- CSS link -->
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-
-<body>
-    <!-- Content Wrapper -->
-    <div class="wrapper d-flex h-100">
-        <input type="checkbox" class="d-none" id="sidebar" checked>
-        <!--Start: Sidebar-->
-        <aside class="side-nav overflow-hidden d-flex d-sm-none flex-column" id="side-nav">
-            <div class="aside-header d-flex align-items-center justify-content-between">
-                <div class="d-inline-block d-sm-none">
-                    <img src="assets/images/logo.png" class="header-logo" alt="#">
-                </div>
-                <label for="sidebar" class="toggle-menu m-0 p-0 ml-auto">
-                    <span class="line line-1"></span>
-                    <span class="line line-2"></span>
-                    <span class="line line-3"></span>
-                </label>
+<!-- Content Wrapper -->
+<div class="wrapper d-flex h-100">
+    <!--Start: Sidebar-->
+    <app-sidebar></app-sidebar>
+    <!--End: Sidebar-->
+    <div class="flex-grow-1 overflow-hidden">
+        <div class="content-wrapper d-flex flex-column h-100 overflow-hidden">
+            <!--Start: header -->
+            <app-header></app-header>
+            <!--End: header -->
+            <!--Start: Main Section -->
+            <div class="flex-grow-1 overflow-auto">
+                <router-outlet></router-outlet>
             </div>
-            <div class="aside-body d-flex flex-column flex-grow-1 overflow-y-auto">
-                <ul class="sidebar-nav d-flex flex-column p-0 h-100">
-                    <li class="nav-item">
-                        <div class="btn-group dropright">
-                            <button type="button" class="btn btn-sidebar align-items-center" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
-                                <span class="btn-data">Mentors</span>
-                                <span class="fa fa-angle-right ml-2"></span>
-                            </button>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Add Mentors</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">View Profile</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <div class="btn-group dropright">
-                            <button type="button" class="btn btn-sidebar align-items-center" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
-                                <span class="btn-data">Interns</span>
-                                <span class="fa fa-angle-right ml-2"></span>
-                            </button>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Add Interns</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">View Profile</a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </aside>
-        <!--End: Sidebar-->
-        <div class="flex-grow-1 overflow-hidden">
-            <div class="content-wrapper d-flex flex-column h-100 overflow-hidden">
-                <!--Start: header -->
-                <header class="header d-flex px-4 py-2 align-items-center justify-content-between">
-                    <div class="d-none d-sm-inline-block">
-                        <img src="assets/images/logo.png" class="header-logo" alt="#">
-                    </div>
-                    <label for="sidebar" class="toggle-menu-header d-block d-sm-none m-0 p-0">
-                        <span class="line line-1"></span>
-                        <span class="line line-2"></span>
-                        <span class="line line-3"></span>
-                    </label>
-                    <div>
-                        <div class="btn-group mr-3 d-none d-sm-inline-block">
-                            <button type="button" class="btn header-btn" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
-                                <span class="text-black">Mentors</span><span class="fa fa-angle-down ml-2"></span>
-                            </button>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Add Mentors</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">View Profile</a>
-                            </div>
-                        </div>
-                        <div class="btn-group mr-3 d-none d-sm-inline-block">
-                            <button type="button" class="btn header-btn" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
-                                <span class="text-black">Interns</span><span class="fa fa-angle-down ml-2"></span>
-                            </button>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Add Interns</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">View Profile</a>
-                            </div>
-                        </div>
-                        <button class="btn header-btn">
-                            Logout
-                        </button>
-                    </div>
-                </header>
-                <!--End: header -->
-                <!--Start: Main Section -->
-                <main class="dashboard-secton bg-secondary overflow-auto flex-grow-1 p-4 d-flex align-items-center justify-content-center">
-                    <figure class="mb-3 w-25">
-                        <img src="assets/images/main-section-img.png" class="main-section-img" alt="Website Under construction">
-                    </figure>
-                </main>
-                <!--End: Main Section -->
-            </div>
+            <!--End: Main Section -->
         </div>
     </div>
-    <!-- Bootstrap JavaScript -->
-    
-</body>
-
+</div>
