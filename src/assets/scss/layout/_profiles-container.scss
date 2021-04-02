@@ -1,0 +1,48 @@
+.profile-container {
+    border: 1px solid $gray-400;
+    .details-section {
+        overflow: auto;
+    }
+}
+
+.personal-info-section {
+    border-right: 1px solid $gray-400;
+    @media only screen and (max-width: 768px) {
+        border-right: none;
+        border-bottom: 1px solid $gray-400;
+    }
+    .profile-header {
+        padding: 30px 10px;
+        background-color: $gray-300;
+        .user-pfp {
+            font-size: $font-size + 30;
+            color: $primary;
+            border-radius: 50%;
+            cursor: pointer;
+            margin-bottom: 15px;
+        }
+        .user-name {
+            font-weight: $font-medium;
+        }
+    }
+    .profile-main {
+        background-color: $gray-100;
+        padding: 20px 10px;
+        td,
+        th {
+            border: none;
+        }
+        th {
+            font-weight: $font-medium;
+        }
+    }
+}
+
+.internship-details {
+    padding: 20px;
+    border-bottom: 1px solid $gray-400;
+}
+
+.login-details {
+    padding: 20px;
+}

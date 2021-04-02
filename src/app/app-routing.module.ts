@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { MainComponent } from './main/main.component';
 import { MentorFormComponent } from './mentor-form/mentor-form.component';
 import { MentorListComponent } from './mentor-list/mentor-list.component';
+import { ProfilePresentationComponent } from './profile-presentation/profile-presentation.component';
 
 const routes: Routes = [
   {
@@ -12,7 +13,7 @@ const routes: Routes = [
     path: 'mentor-form', component: MentorFormComponent
   },
   {
-    path: 'mentor-list', component: MentorListComponent
+    path: 'mentor-list', component: ProfilePresentationComponent
   }
 ];
 

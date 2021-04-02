@@ -8,6 +8,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { MainComponent } from './main/main.component';
 import { MentorFormComponent } from './mentor-form/mentor-form.component';
 import { MentorListComponent } from './mentor-list/mentor-list.component';
+import { ProfilePresentationComponent } from './profile-presentation/profile-presentation.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MentorListComponent } from './mentor-list/mentor-list.component';
     SidebarComponent,
     MainComponent,
     MentorFormComponent,
-    MentorListComponent
+    MentorListComponent,
+    ProfilePresentationComponent
   ],
   imports: [
     BrowserModule,
