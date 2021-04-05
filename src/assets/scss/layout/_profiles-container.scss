@@ -1,15 +1,19 @@
+.main-div {
+    padding: 30px;
+}
 .profile-container {
     border: 1px solid $gray-400;
+    @media only screen and (min-width: 992px) {
+        height: 100%;
+    }
     .details-section {
         overflow: auto;
     }
 }
-.main-div {
-    background-color: $secondary;
-}
+
 .personal-info-section {
     border-right: 1px solid $gray-400;
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 992px) {
         border-right: none;
         border-bottom: 1px solid $gray-400;
     }
@@ -30,12 +34,17 @@
     .profile-main {
         background-color: $gray-100;
         padding: 20px 10px;
+        overflow: hidden;
         td,
         th {
             border: none;
         }
+        td {
+            word-wrap: break-word;
+        }
         th {
             font-weight: $font-medium;
+            white-space: nowrap;
         }
     }
 }

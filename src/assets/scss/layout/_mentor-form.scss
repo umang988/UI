@@ -1,6 +1,36 @@
 .main-div {
     background-color: $white;
 }
+.personal-section,
+.login-section {
+    .heading {
+        color: $blue;
+        font-weight: $font-regular;
+        font-size: $font-size + 15;
+        @media only screen and (max-width: 768px) {
+            margin-top: 10px;
+        }
+    }
+}
+.main-heading {
+    font-size: $font-size + 20;
+    margin-bottom: 20px;
+}
+.personal-section {
+    .row-2 {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .dialing-code {
+        min-width: 80px;
+    }
+}
+.login-section {
+    @media only screen and (min-width: 768px) {
+        padding-left: 30px;
+        width: 50%;
+    }
+}
 .form-group {
     margin:20px 0;
     position:relative;
@@ -9,21 +39,37 @@
         padding:5px;
         pointer-events: none;
         position:absolute;
-        left:15px;
+        left:10px;
         top:2px;
         transition: 0.2s;
         opacity:0.5;
         background: $white;
+        white-space: nowrap;
     }
 }
 
 .form-control {
-    border: 1px solid $gray-300;
+    border: 1px solid $gray-500;
+    position: relative;
     border-radius: 0px;
+    outline: none;
     transition: .3s all;
+    .option {
+        transition: .3s all;
+        &:hover {
+            background-color: $blue;
+        }
+    }
     &:focus {
         box-shadow: none;
         border: 1px solid $blue;
+        color: $blue;
+        & + .label {
+            opacity:1;
+            transform: scale(0.75) translateY(-70%) translateX(-14px);
+        }
+    }
+    &:valid {
         & + .label {
             opacity:1;
             transform: scale(0.75) translateY(-70%) translateX(-14px);
@@ -40,3 +86,15 @@
 .error{
     outline: 1px solid red;
 }    
+
+.submit-btn {
+    background-color: $blue;
+    color: $white;
+    transition: .3s all;
+    border: solid 2px $blue;
+    margin-top: 20px;
+    &:hover {
+        background-color: $white;
+        color: $blue;
+    }
+}
