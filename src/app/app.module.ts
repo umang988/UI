@@ -18,7 +18,7 @@ import { ProfilePresentationComponent } from './profile-presentation/profile-pre
     MainComponent,
     MentorFormComponent,
     MentorListComponent,
-    ProfilePresentationComponent
+    ProfilePresentationComponent,
   ],
   imports: [
     BrowserModule,

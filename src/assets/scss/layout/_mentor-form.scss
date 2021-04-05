@@ -1,0 +1,42 @@
+.main-div {
+    background-color: $white;
+}
+.form-group {
+    margin:20px 0;
+    position:relative;
+    display:inline-block;
+    .label {
+        padding:5px;
+        pointer-events: none;
+        position:absolute;
+        left:15px;
+        top:2px;
+        transition: 0.2s;
+        opacity:0.5;
+        background: $white;
+    }
+}
+
+.form-control {
+    border: 1px solid $gray-300;
+    border-radius: 0px;
+    transition: .3s all;
+    &:focus {
+        box-shadow: none;
+        border: 1px solid $blue;
+        & + .label {
+            opacity:1;
+            transform: scale(0.75) translateY(-70%) translateX(-14px);
+        }
+    }
+}
+
+.contact-input::-webkit-outer-spin-button,
+.contact-input::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+}
+
+.error{
+    outline: 1px solid red;
+}    
