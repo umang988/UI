@@ -1,68 +1,77 @@
-<div class="h-100 w-100 p-4 bg-white">
-    <h2 class="main-heading">Add Mentor</h2>
+<div class="form-wrapper p-4 secondary overflow-auto">
+    <h2 class="main-heading display-1">Add Mentor</h2>
     <form autocomplete="off">
-        <div class="row no-gutters">
-            <div class="col-md-6 personal-section">
-                <h2 class="heading">Personal Details</h2>
-                <div class="form-group">
-                    <input type="text" id="firstName" class="form-control" placeholder=" ">
-                    <label class="label" for="firstName">First Name</label>
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder=" ">
-                    <label class="label" for="firstName">Middle Name</label>
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder=" ">
-                    <label class="label" for="firstName">Last Name</label>
-                </div>
-                <div class="group d-flex">
-                    <select class="form-control dialing-code" id="exampleFormControlSelect1">
-                        <option>+91</option>
-                        <option>21</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
-                    <div class="form-group flex-grow-1 m-0">
-                        <input type="number" class="form-control contact-input" placeholder=" ">
-                        <label class="label" for="firstName">Mobile No.</label>
+        <div class="container bg-white p-5 d-flex flex-column">
+            <div class="row no-gutters">
+                <div class="col-md-6 personal-section pr-md-5">
+                    <h2 class="heading">Personal Details</h2>
+                    <div class="form-group">
+                        <input type="text" id="firstName" class="form-control" placeholder=" ">
+                        <label class="label" for="firstName">First Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder=" ">
+                        <label class="label" for="firstName">Middle Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder=" ">
+                        <label class="label" for="firstName">Last Name</label>
+                    </div>
+                    <div class="form-group d-flex">
+                        <select class="form-control dialing-code" id="exampleFormControlSelect1">
+                            <option>+91</option>
+                            <option>21</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                        <div class="form-group flex-grow-1 m-0 ml-2">
+                            <input type="number" class="form-control contact-input" placeholder=" ">
+                            <label class="label" for="firstName">Mobile No.</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" id="exampleFormControlSelect2">
+                            <option hidden>Select Domain</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" id="exampleFormControlSelect3">
+                            <option hidden>Select sub-Domain</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
                     </div>
                 </div>
-                <div class="form-group">
-                    <select class="form-control" id="exampleFormControlSelect2">
-                        <option hidden>Select Domain</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <select class="form-control" id="exampleFormControlSelect3">
-                        <option hidden>Select sub-Domain</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
+                <div class="col-md-6 login-section pl-md-5">
+                    <h2 class="heading">Login Details</h2>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder=" ">
+                        <label class="label" for="exampleInputEmail1">Email address</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder=" ">
+                        <label class="label" for="exampleInputPassword1">Password</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="exampleInputPassword2" placeholder=" ">
+                        <label class="label" for="exampleInputPassword2">Confirm Password</label>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-6 login-section">
-                <h2 class="heading">Login Details</h2>
-                <div class="form-group">
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder=" ">
-                    <label class="label" for="exampleInputEmail1">Email address</label>
+            <div class="row btn-row no-gutters pl-md-5 align-self-end align-items-center">
+                <div class="col-8 col-sm-6 pr-sm-4">
+                    <button class="btn submit-btn w-100" type="submit">Save</button>
                 </div>
-                <div class="form-group">
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder=" ">
-                    <label class="label" for="exampleInputPassword1">Password</label>
+                <div class="col-8 col-sm-6 pl-sm-4 mt-3 mt-sm-0">
+                    <button class="btn submit-btn w-100" type="submit">Cancel</button>
                 </div>
-                <div class="form-group">
-                    <input type="password" class="form-control" id="exampleInputPassword2" placeholder=" ">
-                    <label class="label" for="exampleInputPassword2">Confirm Password</label>
-                </div>
-                <button class="btn submit-btn" type="submit">Add Mentor</button>
             </div>
         </div>
     </form>

@@ -1,9 +1,17 @@
+.form-wrapper {
+    @media only screen and (min-width: 768px) {
+        height: 100%;
+    }
+}
+.container {
+    box-shadow: 0px 2px 6px $gray-400;
+}
 .personal-section,
 .login-section {
     .heading {
         color: $blue;
         font-weight: $font-regular;
-        font-size: $font-size + 15;
+        font-size: $font-size + 10;
         @media only screen and (max-width: 768px) {
             margin-top: 10px;
         }
@@ -13,8 +21,22 @@
 .main-heading {
     font-size: $font-size + 20;
     margin-bottom: 20px;
+    margin-left: 15px;
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 5px;
+        background-color: $blue;
+        left: -15px;
+    }
 }
 .personal-section {
+    border-right: solid 1px $gray-500;
+    @media only screen and (max-width: 768px) {
+        border-right: none
+    }
     .row-2 {
         display: flex;
         flex-wrap: nowrap;
@@ -89,5 +111,12 @@
     &:hover {
         background-color: $white;
         color: $blue;
+    }
+}
+
+.btn-row {
+    width: 50%;
+    @media only screen and (max-width: 768px) {
+        width: 100%;
     }
 }
